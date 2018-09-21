@@ -46,7 +46,7 @@ const makeAuthorProfile = (
   <MockFixture
     params={params}
     render={mocks => (
-      <MockedProvider mocks={mocks}>
+      <MockedProvider mocks={console.log(mocks) || mocks}>
         <AuthorProfileProvider
           articleImageRatio={articleImageRatio}
           debounceTimeMs={250}
